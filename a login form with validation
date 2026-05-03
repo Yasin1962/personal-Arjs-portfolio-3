@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+</head>
+
+<body>
+
+<form name="loginForm">
+Username: <input type="text" ng-model="user" required><br>
+<span ng-show="loginForm.$submitted && !user">Required</span><br>
+
+Password: <input type="password" ng-model="pass" required><br>
+<span ng-show="loginForm.$submitted && !pass">Required</span><br>
+
+<button type="submit" ng-click="loginForm.$submitted=true">Login</button>
+</form>
+
+</body>
+</html>
