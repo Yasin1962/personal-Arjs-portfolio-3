@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+</head>
+
+<body>
+
+<h2>Student Registration</h2>
+
+Name: <input type="text" ng-model="name"><br>
+Email: <input type="text" ng-model="email"><br>
+
+<h3>Entered Data:</h3>
+<p>Name: {{name}}</p>
+<p>Email: {{email}}</p>
+
+</body>
+</html>
